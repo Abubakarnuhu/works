@@ -553,3 +553,11 @@ label {
     padding: 10px;
     margin-top: 10px;
 }
+
+.breakfast {
+    width: 300px;
+    height: 180px;
+    background-color: hsl(40, 60%, 98%);
+    border-radius: 10px;
+    padding: 30px
+}
