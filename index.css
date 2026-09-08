@@ -8,8 +8,6 @@
     font-family: 'MyFont';
     src: url('assets/fonts/dm-mono/') format('dm-mono'),
         url('assets/fonts/dm-sans/') format('dm-sans') url('assets/fonts/fraunces/') format('fraunces');
-
-
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +19,7 @@
 .sidebar {
     padding: 20px;
     border-right: 1px solid hsl(36, 22%, 86%);
-    height: 800px;
+    height: 1000px;
     width: 250px;
 }
 
@@ -83,12 +81,13 @@
 
 .guest-nav img {
     color: hsl(33, 22%, 20%);
+    background-color: transparent;
 }
 
 
 .guest-nav strong {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     justify-content: center;
     border-radius: 50%;
     display: flex;
@@ -111,6 +110,12 @@
     border-radius: 10px;
     position: relative;
     margin-top: 150px;
+    position: relative;
+    top: 150px;
+    background-image: url(assets/images/icon-weather.svg);
+    background-repeat: no-repeat;
+    background-position-y: -20px;
+    background-position-x: 190px;
 }
 
 .local-weather p {
@@ -129,16 +134,17 @@
     font-family: 'fraunces', serif;
 }
 
-.local-weather img {
-    position: relative;
+/* .local-weather img {
     background-color: transparent;
-    top: -10px;
-    right: px;
-    float: right;
-}
+    position: absolute;
+    object-fit: cover;
+    top: -30px;
+    right: -20px;
+    border-radius: 50%;
+} */
 
-footer {
-    margin-top: 30px;
+.foot {
+    margin-top: 190px;
     border-top: 1px dashed hsl(36, 22%, 86%);
     font-size: 12px;
     letter-spacing: 2px;
@@ -406,7 +412,7 @@ header em {
 
 .arrival {
     width: 300px;
-    height: 180px;
+    height: 190px;
     background-color: hsl(40, 60%, 98%);
     border-radius: 10px;
     padding: 30px;
@@ -444,7 +450,7 @@ header em {
     color: hsl(15, 69%, 37%);
     font-style: normal;
     background: transparent;
-    margin-left: 90px;
+    margin-left: 150px;
     font-size: 20px;
 }
 
@@ -471,7 +477,7 @@ header em {
 
 .wifi {
     width: 300px;
-    height: 180px;
+    height: 190px;
     background-color: hsl(40, 60%, 98%);
     border-radius: 10px;
     padding: 30px;
@@ -509,7 +515,7 @@ header em {
     color: hsl(230, 49%, 56%);
     font-style: normal;
     background: transparent;
-    margin-left: 90px;
+    margin-left: 180px;
     font-size: 20px;
 }
 
@@ -556,8 +562,75 @@ label {
 
 .breakfast {
     width: 300px;
-    height: 180px;
+    height: 190px;
     background-color: hsl(40, 60%, 98%);
     border-radius: 10px;
     padding: 30px
+}
+
+.breakfast span {
+    display: flex;
+    background: transparent;
+    gap: 10px;
+    align-items: center;
+}
+
+.breakfast div {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(340, 48%, 52%);
+}
+
+.breakfast img {
+    background-color: transparent;
+    padding: 13px;
+}
+
+.breakfast h2 {
+    color: hsl(340, 48%, 52%);
+    background: transparent;
+    font-family: 'dm-mono', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.breakfast em {
+    color: hsl(340, 48%, 52%);
+    font-style: normal;
+    background: transparent;
+    margin-left: 130px;
+    font-size: 20px;
+}
+
+.breakfast strong {
+    font-weight: 400;
+    letter-spacing: 1px;
+    background: transparent;
+    font-size: 25px;
+}
+
+.breakfast h6 {
+    color: hsl(33, 17%, 41%);
+    font-family: sans-serif;
+    background: transparent;
+}
+
+.breakfast p {
+    line-height: 25px;
+    background: transparent;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: hsl(32, 20%, 29%);
+}
+
+footer {
+    border-top: 1px solid hsl(36, 22%, 86%);
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: hsl(33, 17%, 41%);
+    padding: 20px;
+    font-family: 'dm-mono', sans-serif;
 }
